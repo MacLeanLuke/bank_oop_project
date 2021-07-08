@@ -1,3 +1,6 @@
+# tried to add chaining but I'm not sure it what isn't working
+# received error: AttributeError: 'NoneType' object has no attribute 'make_deposit'
+
 # methods must be called from an instance of a class. 
 class User:		# here's what we have so far
     def __init__(self, name, email):
