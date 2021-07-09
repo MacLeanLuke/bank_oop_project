@@ -18,12 +18,16 @@ class BankAccount:
     def withdraw(self, amount):
         # withdraw(self, amount) - decreases the account balance by the given amount if there are sufficient funds; if there is not enough money, print a message "Insufficient funds: Charging a $5 fee" and deduct $5
         # your code here
-        self.balance -= amount
+        if (self.balance - amount) > 0:
+    	    self.balance -= amount
+        else:
+    	    print("INSUFFICIENT FUNDS")
+    	return self
 
     def display_account_info(self):
         # display_account_info(self) - print to the console: eg. "Balance: $100"
         # your code here
-        print(f"Balance: ${self.balance} - Interest Rate: {self.int_rate * 100}%")
+        return f"Balance: ${self.balance} - Interest Rate: {self.int_rate * 100}%"
 
     def yield_interest(self):
         # yield_interest(self) - increases the account balance by the current balance * the interest rate (as long as the balance is positive)

@@ -32,7 +32,7 @@ class User:		# here's what we have so far
             other_user.account.deposit(amount)
 
 # Create 3 instances of the User class
-charles = User("Charles van Rotherdam", "charlie@pmail.com")
+charles = User("Charles van Rotherdam", "cwaharlie@pmail.com")
 guido = User("Guido van Rossum", "guido@python.com")
 fido = User("fido van Rossum", "fido@python.com")
 
